@@ -37,6 +37,7 @@
 
   <!-- Material Symbols -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400..700,0..1,-50..200" />
+
   <style>
     body {
       font-family: 'Cairo', sans-serif;
@@ -47,15 +48,10 @@
     }
     a:hover, a:focus {
       color: #dddddd;
-      text-decoration: none;
     }
     .material-symbols-outlined {
       font-family: 'Material Symbols Outlined';
-      font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 48;
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
       font-size: 2.5rem;
       display: block;
       line-height: 1;
@@ -65,9 +61,29 @@
     .material-symbols-outlined:hover {
       color: #cccccc;
     }
+    #coming-soon-toast {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #444;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 9999;
+    }
+    #coming-soon-toast.show {
+      opacity: 1;
+    }
   </style>
 </head>
 <body class="bg-dark-gray-bg text-white">
+
+  <!-- Toast -->
+  <div id="coming-soon-toast">Coming soon!</div>
 
   <!-- Header -->
   <header class="flex justify-between items-center p-4 border-b border-gray-700 animate-fade-in-up">
@@ -101,45 +117,45 @@
     </p>
   </section>
 
-  <!-- Category Icons -->
+  <!-- Icon Buttons -->
   <nav class="flex justify-around px-4 md:px-12 mt-12 animate-fade-in-up">
-    <a href="christianity.html" class="flex flex-col items-center hover:text-gray-300">
+    <div onclick="showComingSoon()" class="flex flex-col items-center hover:text-gray-300 cursor-pointer">
       <span class="material-symbols-outlined">church</span>
       <span class="text-white mt-1">Christianity</span>
-    </a>
-    <a href="atheism.html" class="flex flex-col items-center hover:text-gray-300">
+    </div>
+    <div onclick="showComingSoon()" class="flex flex-col items-center hover:text-gray-300 cursor-pointer">
       <span class="material-symbols-outlined">brightness_auto</span>
       <span class="text-white mt-1">Atheism</span>
-    </a>
-    <a href="prophethood.html" class="flex flex-col items-center hover:text-gray-300">
+    </div>
+    <div onclick="showComingSoon()" class="flex flex-col items-center hover:text-gray-300 cursor-pointer">
       <span class="material-symbols-outlined">history_edu</span>
       <span class="text-white mt-1">Prophethood</span>
-    </a>
-    <a href="gender.html" class="flex flex-col items-center hover:text-gray-300">
+    </div>
+    <div onclick="showComingSoon()" class="flex flex-col items-center hover:text-gray-300 cursor-pointer">
       <span class="material-symbols-outlined">female</span>
       <span class="text-white mt-1">Gender</span>
-    </a>
-    <a href="science.html" class="flex flex-col items-center hover:text-gray-300">
+    </div>
+    <div onclick="showComingSoon()" class="flex flex-col items-center hover:text-gray-300 cursor-pointer">
       <span class="material-symbols-outlined">experiment</span>
       <span class="text-white mt-1">Science</span>
-    </a>
+    </div>
   </nav>
 
-  <!-- Articles Grid -->
+  <!-- Article Cards -->
   <section class="mt-10 px-6 max-w-3xl mx-auto animate-fade-in-up">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <a href="refutation-against-pedophilia-in-islam.html" target="_blank" class="block bg-dark-gray-bg-2 p-4 rounded-lg shadow-[0_4px_8px_rgba(0,0,0,0.6)] hover:bg-[#444444] transition">
         <h2 class="text-lg font-semibold text-white">Refutation Against Pedophilia</h2>
       </a>
-      <a href="quran-is-the-world-of-god.html" target="_blank" class="block bg-dark-gray-bg-2 p-4 rounded-lg shadow-[0_4px_8px_rgba(0,0,0,0.6)] hover:bg-[#444444] transition">
+      <div onclick="showComingSoon()" class="block bg-dark-gray-bg-2 p-4 rounded-lg shadow-[0_4px_8px_rgba(0,0,0,0.6)] hover:bg-[#444444] transition cursor-pointer">
         <h2 class="text-lg font-semibold text-white">Proof That the Quran is the Word of God</h2>
-      </a>
-      <a href="scientific-evidence-of-god.html" target="_blank" class="block bg-dark-gray-bg-2 p-4 rounded-lg shadow-[0_4px_8px_rgba(0,0,0,0.6)] hover:bg-[#444444] transition">
+      </div>
+      <div onclick="showComingSoon()" class="block bg-dark-gray-bg-2 p-4 rounded-lg shadow-[0_4px_8px_rgba(0,0,0,0.6)] hover:bg-[#444444] transition cursor-pointer">
         <h2 class="text-lg font-semibold text-white">Scientific Evidence of God</h2>
-      </a>
-      <a href="why-sodomy-is-haram.html" target="_blank" class="block bg-dark-gray-bg-2 p-4 rounded-lg shadow-[0_4px_8px_rgba(0,0,0,0.6)] hover:bg-[#444444] transition">
+      </div>
+      <div onclick="showComingSoon()" class="block bg-dark-gray-bg-2 p-4 rounded-lg shadow-[0_4px_8px_rgba(0,0,0,0.6)] hover:bg-[#444444] transition cursor-pointer">
         <h2 class="text-lg font-semibold text-white">Why Homosexuality is Haram</h2>
-      </a>
+      </div>
     </div>
   </section>
 
@@ -153,7 +169,7 @@
     &copy; 2025 DIR 'AL TAWHEED. All rights reserved.
   </footer>
 
-  <!-- ✅ Hijri Date Script (API + Local Fallback) -->
+  <!-- Hijri Date Script -->
   <script>
     async function loadHijriDate() {
       const today = new Date();
@@ -191,6 +207,12 @@
           document.getElementById("hijri-date").textContent = "Hijri date unavailable.";
         }
       }
+    }
+
+    function showComingSoon() {
+      const toast = document.getElementById('coming-soon-toast');
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2000);
     }
 
     loadHijriDate();
