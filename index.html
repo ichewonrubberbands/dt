@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AL DIR 'AL TAWHEED - The Shield of Monotheism</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%': { opacity: 0, transform: 'translateY(20px)' },
+              '100%': { opacity: 1, transform: 'translateY(0)' },
+            },
+          },
+          colors: {
+            'dark-gray-bg': '#222222',
+            'dark-gray-bg-2': '#333333',
+            'gray-shadow': 'rgba(0, 0, 0, 0.6)',
+          }
+        },
+      },
+    }
+  </script>
+
+  <!-- Google Fonts: Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
+
+  <!-- Material Symbols -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400..700,0..1,-50..200" />
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    a:hover, a:focus {
+      color: #dddddd;
+      text-decoration: none;
+    }
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
+      font-size: 2.5rem;
+      display: block;
+      line-height: 1;
+      color: white;
+      transition: color 0.3s ease;
+    }
+    .material-symbols-outlined:hover {
+      color: #cccccc;
+    }
+  </style>
+</head>
+<body class="bg-dark-gray-bg text-white">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center p-4 border-b border-gray-700 animate-fade-in-up">
+    <div class="text-xl font-bold text-white">🛡️ الدرع التوحيد</div>
+    <div id="hijri-date" class="text-sm text-white">Loading Hijri date...</div>
+  </header>
+
+  <!-- Basmala -->
+  <section class="text-center mt-4 mb-2 text-lg text-gray-400 font-light animate-fade-in-up">
+    بسم الله الرحمن الرحيم
+  </section>
+
+  <!-- Title -->
+  <section class="text-center my-6 animate-fade-in-up">
+    <h1 class="text-4xl md:text-5xl font-bold tracking-wide text-white mb-2">
+      AL DIR ‘AL TAWHEED
+    </h1>
+    <p class="text-xl tracking-wide text-gray-300" style="letter-spacing: 0.1em;">
+      The Shield of Monotheism
+    </p>
+  </section>
+
+  <!-- About Section -->
+  <section class="max-w-3xl mx-auto mt-10 px-6 py-8 bg-dark-gray-bg-2 rounded-lg shadow-[0_4px_8px_rgba(0,0,0,0.6)] text-center leading-relaxed animate-fade-in-up">
+    <h2 class="text-2xl font-semibold mb-4 text-white">ABOUT US</h2>
+    <p class="mb-4 text-white/90">
+      AL DIR 'AL TAWHEED is a dedicated platform committed to defending and clarifying the fundamental principles of monotheism. Through carefully researched articles, respectful dialogue, and authentic knowledge, we aim to educate and shield the faith from misunderstandings and misrepresentations.
+    </p>
+    <p class="text-white/90">
+      Our mission is to promote understanding and unity by addressing contemporary issues, answering common questions, and refuting misconceptions with wisdom and compassion. We stand firmly against extremism, hate, and intolerance, encouraging respectful and informed discussions.
+    </p>
+  </section>
+
+  <!-- Category Icons -->
+  <nav class="flex justify-around px-4 md:px-12 mt-12 animate-fade-in-up">
+    <a href="christianity.html" class="flex flex-col items-center hover:text-gray-300">
+      <span class="material-symbols-outlined">church</span>
+      <span class="text-white mt-1">Christianity</span>
+    </a>
+    <a href="atheism.html" class="flex flex-col items-center hover:text-gray-300">
+      <span class="material-symbols-outlined">brightness_auto</span>
+      <span class="text-white mt-1">Atheism</span>
+    </a>
+    <a href="prophethood.html" class="flex flex-col items-center hover:text-gray-300">
+      <span class="material-symbols-outlined">history_edu</span>
+      <span class="text-white mt-1">Prophethood</span>
+    </a>
+    <a href="gender.html" class="flex flex-col items-center hover:text-gray-300">
+      <span class="material-symbols-outlined">female</span>
+      <span class="text-white mt-1">Gender</span>
+    </a>
+    <a href="science.html" class="flex flex-col items-center hover:text-gray-300">
+      <span class="material-symbols-outlined">experiment</span>
+      <span class="text-white mt-1">Science</span>
+    </a>
+  </nav>
+
+  <!-- Articles Grid -->
+  <section class="mt-10 px-6 max-w-3xl mx-auto animate-fade-in-up">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <a href="refutation-against-pedophilia-in-islam.html" target="_blank" class="block bg-dark-gray-bg-2 p-4 rounded-lg shadow-[0_4px_8px_rgba(0,0,0,0.6)] hover:bg-[#444444] transition">
+        <h2 class="text-lg font-semibold text-white">Refutation Against Pedophilia</h2>
+      </a>
+      <a href="quran-is-the-world-of-god.html" target="_blank" class="block bg-dark-gray-bg-2 p-4 rounded-lg shadow-[0_4px_8px_rgba(0,0,0,0.6)] hover:bg-[#444444] transition">
+        <h2 class="text-lg font-semibold text-white">Proof That the Quran is the Word of God</h2>
+      </a>
+      <a href="scientific-evidence-of-god.html" target="_blank" class="block bg-dark-gray-bg-2 p-4 rounded-lg shadow-[0_4px_8px_rgba(0,0,0,0.6)] hover:bg-[#444444] transition">
+        <h2 class="text-lg font-semibold text-white">Scientific Evidence of God</h2>
+      </a>
+      <a href="why-sodomy-is-haram.html" target="_blank" class="block bg-dark-gray-bg-2 p-4 rounded-lg shadow-[0_4px_8px_rgba(0,0,0,0.6)] hover:bg-[#444444] transition">
+        <h2 class="text-lg font-semibold text-white">Why Homosexuality is Haram</h2>
+      </a>
+    </div>
+  </section>
+
+  <!-- Disclaimer -->
+  <section class="text-center italic text-sm mt-10 px-4 max-w-xl mx-auto text-white/70 animate-fade-in-up">
+    We do not support extremism, hate, or any form of intolerance. This platform is dedicated to respectful dialogue and understanding.
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm mt-6 p-4 border-t border-gray-700 text-white/70 animate-fade-in-up">
+    &copy; 2025 DIR 'AL TAWHEED. All rights reserved.
+  </footer>
+
+  <!-- ✅ Hijri Date Script (API + Local Fallback) -->
+  <script>
+    async function loadHijriDate() {
+      const today = new Date();
+      const day = today.getDate().toString().padStart(2, '0');
+      const month = (today.getMonth() + 1).toString().padStart(2, '0');
+      const year = today.getFullYear();
+      const formattedDate = `${day}-${month}-${year}`;
+
+      try {
+        const response = await fetch(`https://api.aladhan.com/v1/gToH?date=${formattedDate}`);
+        const result = await response.json();
+
+        if (result.code === 200 && result.data && result.data.hijri) {
+          const hijri = result.data.hijri;
+          document.getElementById("hijri-date").textContent =
+            `${hijri.day} ${hijri.month.en}, ${hijri.year}H`;
+        } else {
+          const hijriDate = new Intl.DateTimeFormat('en-TN-u-ca-islamic', {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+          }).format(today);
+          document.getElementById("hijri-date").textContent = hijriDate + " (local)";
+        }
+      } catch (error) {
+        console.error("Hijri fetch failed:", error);
+        try {
+          const hijriDate = new Intl.DateTimeFormat('en-TN-u-ca-islamic', {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+          }).format(today);
+          document.getElementById("hijri-date").textContent = hijriDate + " (local)";
+        } catch {
+          document.getElementById("hijri-date").textContent = "Hijri date unavailable.";
+        }
+      }
+    }
+
+    loadHijriDate();
+  </script>
+</body>
+</html>
